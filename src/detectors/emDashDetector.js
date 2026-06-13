@@ -9,10 +9,10 @@ export function detectEmDashes(text) {
         score += 2;
 
     if (matches >= 4)
-        score += 4;
+        score += 5;
 
     if (matches >= 7)
-        score += 6;
+        score += 8;
 
     return {
         score,

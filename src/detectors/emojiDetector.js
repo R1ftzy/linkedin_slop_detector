@@ -12,13 +12,13 @@ export function detectEmojis(text) {
         score += 2;
 
     if (matches >= 6)
-        score += 4;
+        score += 5;
 
     if (matches >= 10)
-        score += 6;
+        score += 8;
 
     if (matches >= 15)
-        score += 8;
+        score += 12;
 
     return {
         score,

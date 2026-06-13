@@ -1,22 +1,26 @@
 export const GPT_PHRASES = [
     "here's what i learned",
     "the biggest lesson",
+    "the real lesson",
+    "one thing is clear",
     "read that again",
     "let that sink in",
-    "one thing is clear",
-    "nobody talks about",
-    "this changed my life",
-    "the future belongs to",
+
+    "looking forward to",
+    "excited to keep learning",
+    "continuing my journey",
+    "one step at a time",
+
+    "helped me understand",
+    "helped me improve",
+
     "success isn't about",
-    "the real lesson",
-    "if you're reading this",
-    "stop scrolling",
-    "this is your sign",
     "many people don't realize",
-    "most people think",
+    "the future belongs to",
+    "in today's world",
+
     "what if i told you",
-    "after years of",
-    "my journey taught me",
-    "i came across this quote",
-    "a simple reminder"
+    "today i learned",
+    "today i focused on",
+    "today i continued"
 ];

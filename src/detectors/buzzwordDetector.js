@@ -1,3 +1,5 @@
+import { BUZZWORDS } from "../data/buzzwords.js";
+
 export function detectBuzzwords(text) {
     const lowerText = text.toLowerCase();
 

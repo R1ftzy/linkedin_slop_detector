@@ -7,6 +7,7 @@ import { detectGPTPhrases } from "../detectors/gptPhraseDetector.js";
 import { detectStoryPatterns } from "../detectors/storyPatternDetector.js";
 import { getLabel } from "./scoreLabels.js";
 import {detectCorporateStructure} from "../detectors/corporateStructureDetector.js";
+import {detectJourneyPatterns} from "../detectors/journeyDetector.js";
 
 function safeDetect(detector, text) {
     try {
@@ -32,7 +33,8 @@ export function analyzePost(text) {
         safeDetect(detectFormatting, text),
         safeDetect(detectGPTPhrases, text),
         safeDetect(detectStoryPatterns, text),
-        safeDetect(detectCorporateStructure, text)
+        safeDetect(detectCorporateStructure, text),
+        safeDetect(detectJourneyPatterns, text)
     ];
 
     const rawScore = detectors.reduce(
