@@ -5,7 +5,8 @@ export function detectEmojis(text) {
         ) || [];
 
     const matches = emojis.length;
-
+    const ticks = emojis.filter(e => e == '✅').length;
+    const tick_multiplier = 4;
     let score = 0;
 
     if (matches >= 3)
@@ -19,6 +20,8 @@ export function detectEmojis(text) {
 
     if (matches >= 15)
         score += 12;
+
+    score += ticks*(tick_multiplier-1);
 
     return {
         score,
